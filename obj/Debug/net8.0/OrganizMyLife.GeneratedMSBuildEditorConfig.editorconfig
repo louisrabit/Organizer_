@@ -1,0 +1,86 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = OrganizMyLife
+build_property.RootNamespace = OrganizMyLife
+build_property.ProjectDir = C:\Users\luis.coelho.GRUPOTI\OrganizMyLife\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\luis.coelho.GRUPOTI\OrganizMyLife
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Dialogs/MudDialogTask.razor]
+build_metadata.AdditionalFiles.TargetPath = RGlhbG9nc1xNdWREaWFsb2dUYXNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/GenericComponents/Alerts/Alerts.razor]
+build_metadata.AdditionalFiles.TargetPath = R2VuZXJpY0NvbXBvbmVudHNcQWxlcnRzXEFsZXJ0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/GenericComponents/ButtonGroup/MudButtonGroup r.razor]
+build_metadata.AdditionalFiles.TargetPath = R2VuZXJpY0NvbXBvbmVudHNcQnV0dG9uR3JvdXBcTXVkQnV0dG9uR3JvdXAgci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/GenericComponents/GenericDialogs/MudDialogs.razor]
+build_metadata.AdditionalFiles.TargetPath = R2VuZXJpY0NvbXBvbmVudHNcR2VuZXJpY0RpYWxvZ3NcTXVkRGlhbG9ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/HomePage/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/QA_PLayGround/PlayGround_Form.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUFfUExheUdyb3VuZFxQbGF5R3JvdW5kX0Zvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/QA_PLayGround/PlayGround_Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUUFfUExheUdyb3VuZFxQbGF5R3JvdW5kX0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/Redirect/RedirectToDefault.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RcUmVkaXJlY3RUb0RlZmF1bHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/Tasks/Personal.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza3NcUGVyc29uYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Pages/Tasks/Work.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza3NcV29yay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/PrioritySelector/PrioritySelector.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJpb3JpdHlTZWxlY3RvclxQcmlvcml0eVNlbGVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-iz43czlrzi
+
+[C:/Users/luis.coelho.GRUPOTI/OrganizMyLife/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wo02kcwtqw

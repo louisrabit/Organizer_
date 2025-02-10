@@ -1,0 +1,50 @@
+﻿ @page "/dashboard"
+@inject NavigationManager NavManager
+
+<MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
+    <MudGrid>
+        <MudItem xs="12" sm="6" md="6">
+            <MudPaper Elevation="2" Class="pa-4 mud-theme-primary border-5" Style="height: 200px; border-radius:12px">
+                <MudText Class="align-self-center py-4 flex-1 " Typo="Typo.h6" Align="Align.Center">
+                    Today Tickets
+                </MudText>
+                <MudText Typo="Typo.body2" Align="Align.Center" Class="mt-5">
+                    Number Tickets Today:
+                </MudText>
+
+            </MudPaper>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="6">
+            <MudPaper Elevation="2" Class="pa-4 mud-theme-tertiary border-5" Style="height: 200px; border-radius:12px">
+                <MudText Class="align-self-center py-4 flex-1" Typo="Typo.h6" Align="Align.Center">
+                    Pendent Tickets
+                </MudText>
+                <MudText Typo="Typo.body2" Align="Align.Center" Class="mt-5">
+                    Number Tickets Pendent:
+                </MudText>
+            </MudPaper>
+
+
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="12">
+            <MudPaper Elevation="2" Class="pa-4">
+                <MudChart ChartType="ChartType.StackedBar" ChartSeries="@Series" XAxisLabels="@XAxisLabels" Width="100%" Height="350px">
+                    <CustomGraphics>
+                        <style>
+                            .heavy {
+                                font: bold 30px Helvetica;
+                            }
+
+                            .Rrrrr {
+                                font: italic 40px Helvetica;
+                                fill: rgb(62,44,221);
+                            }
+                        </style>
+                    </CustomGraphics>
+                </MudChart>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>

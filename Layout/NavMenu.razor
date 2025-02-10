@@ -1,0 +1,65 @@
+﻿ 
+<MudPaper Width="250px" Class="py-3" Elevation="0">
+    <MudNavMenu>
+        <MudText Typo="Typo.h6" Class="px-4">OrganizWer</MudText>
+  @*       <MudText Typo="Typo.body2" Class="px-4 mud-text-secondary">Secondary Text</MudText> *@
+        <MudDivider Class="my-2" />
+        <MudNavLink Href="/dashboard">Dashboard</MudNavLink>
+    @*     <MudNavLink Href="/servers">Servers</MudNavLink>
+        <MudNavLink Href="/billing" Disabled="true">Billing</MudNavLink> *@
+        <MudNavGroup Title="Taks" HeaderClass="settings-error" Expanded="true">
+            <TitleContent>
+                <MudBadge Icon="@Icons.Material.Filled.ErrorOutline" 
+                          Color="Color.Error" 
+                          Origin="@(RightToLeft ? Origin.CenterLeft : Origin.CenterRight)" 
+                          BadgeClass="mx-2">
+                    Taks
+                </MudBadge>
+            </TitleContent>
+            <ChildContent>
+                <MudNavLink Href="/Personal">Personal</MudNavLink>
+                <MudNavLink Href="/Work">
+                    <MudBadge Content="3" 
+                              Color="Color.Error" 
+                              Origin="@(RightToLeft ? Origin.CenterLeft : Origin.CenterRight)" 
+                              BadgeClass="mx-2">
+                        Work
+                    </MudBadge>
+                </MudNavLink>
+            </ChildContent>
+        </MudNavGroup>
+
+        <MudNavGroup Title="PlayGround"   Expanded="true">
+            <TitleContent>
+                <MudBadge Icon="@Icons.Material.Filled.AddRoad"
+                          Color="Color.Success"
+                          Origin="@(RightToLeft ? Origin.CenterLeft : Origin.CenterRight)"
+                          BadgeClass="mx-2">
+                   QA PlayGround
+                </MudBadge>
+            </TitleContent> 
+
+            <ChildContent>
+                <MudNavLink Href="/PlayGround_Login">Login</MudNavLink>
+                <MudNavLink Href="/PlayGround_Form">Form</MudNavLink>
+              
+            </ChildContent>
+
+        </MudNavGroup>
+
+
+
+
+       @*  <MudNavLink Href="/about">About</MudNavLink> *@
+    </MudNavMenu>
+</MudPaper>
+@code {
+    [CascadingParameter(Name = "RightToLeft")] public bool RightToLeft { get; set; }
+}
+
+<style>    
+    .settings-error {
+        color: red;
+    }
+</style>
+ 

@@ -1,0 +1,43 @@
+﻿@page "/Work"
+@using OrganizMyLife.PrioritySelector
+@inject NavigationManager NavManager
+@inject IDialogService DialogService
+
+<MudPaper Elevation="25">
+    <MudToolBar>
+        <MudButton OnClick="OpenDialogAsync" Color="Color.Secondary">
+            Create New Task
+        </MudButton>
+    </MudToolBar>
+</MudPaper>
+
+<MudContainer Class="mt-16 px-8">
+    <MudGrid>
+        @foreach (var taskItem in tasks)
+        {
+            <MudItem xs="12" sm="6" md="6">
+                <MudPaper Elevation="2" Class="pa-4 mud-theme-primary border-5" Style="height: 230px; border-radius:12px">
+                    <MudText Typo="Typo.h6" Align="Align.Center">
+                        Task @taskItem.Id
+                    </MudText>
+                    <MudText Typo="Typo.body2" Align="Align.Center">
+                        @taskItem.Title
+                    </MudText>
+                    <MudText Typo="Typo.body1" Align="Align.Center">
+                        @taskItem.Task_Body
+                    </MudText>
+
+                    <MudText Typo="Typo.body1" Align="Align.Center">
+                        Prioridade: @taskItem.Priority
+                    </MudText>
+                </MudPaper>
+            </MudItem>
+        }
+    </MudGrid>
+</MudContainer>
+
+@* Work.razor (Página de Tarefas)
+
+Exibe a lista de tarefas.
+Tem um botão "Create New Task" que abre o diálogo para adicionar uma nova tarefa.
+Usa IDialogService para abrir o diálogo MudDialogTask. *@

@@ -1,0 +1,49 @@
+﻿@using MudBlazor
+
+<MudButtonGroup Variant="Variant.Outlined">
+    <MudIconButton Icon="@Icons.Material.Filled.PriorityHigh"
+                   Color="Color.Error"
+                   OnClick="@(() => SetPriority("Alta"))"
+                   Class="@GetButtonClass("Alta")" />
+
+    <MudToggleIconButton Icon="@Icons.Material.Filled.Warning"
+                         Color="Color.Warning"
+                         ToggledIcon="@Icons.Material.Filled.WarningAmber"
+                         ToggledColor="Color.Warning"
+                         OnClick="@(() => SetPriority("Média"))"
+                         Class="@GetButtonClass("Média")" />
+
+    <MudButton StartIcon="@Icons.Material.Filled.LowPriority"
+               IconColor="Color.Success"
+               OnClick="@(() => SetPriority("Baixa"))"
+               Class="@GetButtonClass("Baixa")">
+        Baixa
+    </MudButton>
+</MudButtonGroup>
+
+<MudChip T="string" Color="@GetPriorityColor()">Prioridade: @SelectedPriority</MudChip>
+
+@code {
+    private string SelectedPriority = "Média";
+
+    private void SetPriority(string priority)
+    {
+        SelectedPriority = priority;
+    }
+
+    private Color GetPriorityColor()
+    {
+        return SelectedPriority switch
+        {
+            "Baixa" => Color.Success,
+            "Média" => Color.Warning,
+            "Alta" => Color.Error,
+            _ => Color.Default
+        };
+    }
+
+    private string GetButtonClass(string priority)
+    {
+        return SelectedPriority == priority ? "selected-button" : "";
+    }
+}

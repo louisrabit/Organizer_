@@ -1,0 +1,22 @@
+﻿@using MudBlazor
+@using Microsoft.AspNetCore.Components
+
+<MudDialog>
+    <DialogContent>
+        @ChildContent
+
+    </DialogContent>
+    <DialogActions>
+        @if (ShowCancelButton)
+        {
+            <MudButton OnClick="Cancel" Color="Color.Secondary">@CancelText</MudButton>
+        }
+        <MudButton Color="Color.Primary" OnClick="Submit">@OkText</MudButton>
+    </DialogActions>
+</MudDialog>
+
+ @* MudDialogs.razor (Componente Genérico de Diálogo)
+
+É um componente reutilizável para criar diálogos personalizados.
+Permite passar conteúdo via ChildContent.
+Controla os botões "OK" e "Cancel", chamando os eventos OnSubmit e OnCancel. *@

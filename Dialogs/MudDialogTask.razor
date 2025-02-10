@@ -1,0 +1,20 @@
+﻿@using MudBlazor
+@using OrganizMyLife.Classes
+@using Microsoft.AspNetCore.Components
+@using OrganizMyLife.GenericComponents.GenericDialogs
+@using OrganizMyLife.PrioritySelector
+
+<MudDialogs OkText="Confirm" CancelText="Dismiss" OnSubmit="HandleSubmit" OnCancel="HandleCancel">
+    <h5>Add New Task</h5>
+    <MudTextField Label="Title" @bind-Value="taskItem.Title" />
+    <MudTextField Label="Description" @bind-Value="taskItem.Task_Body" />
+    <PrioritySelector @bind-SelectedPriority="taskItem.Priority" />
+</MudDialogs>
+
+
+@* MudDialogTask.razor (Diálogo de Criação de Tarefas)
+
+Renderiza um formulário dentro de um MudDialog para adicionar uma nova tarefa.
+Recebe o evento OnTaskAdded da página Work.razor.
+Fecha o diálogo quando o utilizador confirma ou cancela. *@
+ 

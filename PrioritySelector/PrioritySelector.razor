@@ -1,0 +1,42 @@
+﻿@using MudBlazor
+
+<MudButtonGroup Variant="Variant.Outlined">
+    <MudButton OnClick="@(() => SetPriority("Baixa"))" Color="Color.Success" Class="@GetButtonClass("Baixa")">
+        Baixa
+    </MudButton>
+    <MudButton OnClick="@(() => SetPriority("Média"))" Color="Color.Warning" Class="@GetButtonClass("Média")">
+        Média
+    </MudButton>
+    <MudButton OnClick="@(() => SetPriority("Alta"))" Color="Color.Error" Class="@GetButtonClass("Alta")">
+        Alta
+    </MudButton>
+</MudButtonGroup>
+
+<MudChip T="string" Color="@GetPriorityColor()">Prioridade: @SelectedPriority</MudChip>
+
+@code {
+    [Parameter] public string SelectedPriority { get; set; }
+    [Parameter] public EventCallback<string> SelectedPriorityChanged { get; set; }
+
+    private async Task SetPriority(string priority)
+    {
+        SelectedPriority = priority;
+        await SelectedPriorityChanged.InvokeAsync(priority);
+    }
+
+    private Color GetPriorityColor()
+    {
+        return SelectedPriority switch
+        {
+            "Baixa" => Color.Success,
+            "Média" => Color.Warning,
+            "Alta" => Color.Error,
+            _ => Color.Default
+        };
+    }
+
+    private string GetButtonClass(string priority)
+    {
+        return SelectedPriority == priority ? "selected-button" : "";
+    }
+}
